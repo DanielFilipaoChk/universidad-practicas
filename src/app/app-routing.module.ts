@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '', component: RegistroUniversidadComponent }, // Página de inicios
   { path: 'registro-universidad', component: RegistroUniversidadComponent },
   { path: 'registro-universidad/datos', component: DatosUniversidadComponent }, // Nueva ruta para mostrar los datos
-  // Otras rutas si es necesario
+  // Otras rutas si es necesarios
 ];
 
 @NgModule({

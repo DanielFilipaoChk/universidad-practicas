@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Cargar estudiantes y universidades desde el backends
+    // Cargar estudiantes y universidades desde el backendss
     this.estudianteService.getEstudiantes().subscribe((data: any) => {
       this.estudiantes = data;
     });

@@ -35,7 +35,7 @@ export class RegistroEstudianteComponent implements OnInit {
     this.http.post('http://localhost:5000/api/estudiantes', this.estudiante)
       .subscribe(response => {
         console.log('Estudiante registrado:', response);
-        this.router.navigate(['/']); // Redirige a la página principals
+        this.router.navigate(['/']); // Redirige a la página principalss
       }, error => {
         console.error('Error al registrar el estudiante:', error);
       });

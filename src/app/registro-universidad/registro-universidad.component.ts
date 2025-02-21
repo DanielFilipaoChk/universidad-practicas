@@ -39,7 +39,7 @@ export class RegistroUniversidadComponent {
       );
   }
 
-  // Método que se llama al enviar el formularios
+  // Método que se llama al enviar el formularioss
   onSubmit() {
     console.log('Formulario enviado');  // Verifica que se está llamando a onSubmitsss
     this.registrarUniversidad(); // Llamamos a registrar la universidad
