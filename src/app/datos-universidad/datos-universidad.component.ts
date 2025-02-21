@@ -28,7 +28,7 @@ export class DatosUniversidadComponent {
         response => {
           console.log('Universidad registrada exitosamente', response);
           this.mensaje = "Universidad registrada correctamente.";
-          // Redirigir a una página o mostrar mensaje si es necesario
+          // Redirigir a una página o mostrar mensaje si es necesarios
         },
         error => {
           console.error('Error al registrar universidad', error);

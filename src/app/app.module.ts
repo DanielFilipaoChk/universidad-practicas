@@ -17,7 +17,7 @@ import { RegistroUniversidadComponent } from './registro-universidad/registro-un
     HomeComponent,  // Página principal
     LoginComponent,  // Página de login
     RegistroUniversidadComponent,  // Formulario de registro de universidad
-    RegistroEstudianteComponent  // Formulario de registro de estudiante
+    RegistroEstudianteComponent  // Formulario de registro de estudiantes
   ],
   imports: [
     BrowserModule,

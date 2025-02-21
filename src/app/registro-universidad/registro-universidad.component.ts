@@ -30,7 +30,7 @@ export class RegistroUniversidadComponent {
           console.log('Universidad registrada exitosamente', response);
           this.mensaje = "Universidad registrada correctamente.";
           // Redirigir al Home o a otra página si es necesario
-          this.router.navigate(['/']); // Redirige a la página principal (ajusta la ruta según tu necesidad)
+          this.router.navigate(['/']); // Rediriges a la página principal (ajusta la ruta según tu necesidad)
         },
         error => {
           console.error('Error al registrar universidad', error);
@@ -39,7 +39,7 @@ export class RegistroUniversidadComponent {
       );
   }
 
-  // Método que se llama al enviar el formulario
+  // Método que se llama al enviar el formularios
   onSubmit() {
     console.log('Formulario enviado');  // Verifica que se está llamando a onSubmitsss
     this.registrarUniversidad(); // Llamamos a registrar la universidad
