@@ -1,0 +1,23 @@
+<p>home works!</p>
+<div class="app-container">
+    <h1>Bienvenido a la aplicación Universidad-Prácticas</h1>
+  
+    <!-- Mostrar las universidades -->
+    <div *ngIf="universidades.length > 0; else noData">
+      <h2>Universidades Registradas:</h2>
+      <ul>
+        <li *ngFor="let universidad of universidades">
+          <strong>Nombre:</strong> {{ universidad.nombre }} <br>
+          <strong>Correo:</strong> {{ universidad.correo }} <br>
+          <strong>Dirección:</strong> {{ universidad.direccion }} <br>
+          <hr>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Si no hay universidades, mostrar un mensaje -->
+    <ng-template #noData>
+      <p>No hay universidades registradas.</p>
+    </ng-template>
+  </div>
+  

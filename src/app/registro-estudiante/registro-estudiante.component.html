@@ -1,0 +1,36 @@
+<div class="registro-estudiante">
+    <h2>Registrar Estudiante</h2>
+    <form (ngSubmit)="onSubmit()" #estudianteForm="ngForm">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="estudiante.nombre" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" [(ngModel)]="estudiante.apellido" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" [(ngModel)]="estudiante.correo" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="carrera">Carrera</label>
+        <input type="text" id="carrera" name="carrera" [(ngModel)]="estudiante.carrera" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="universidadId">Universidad</label>
+        <select id="universidadId" name="universidadId" [(ngModel)]="estudiante.universidadId" required>
+          <option *ngFor="let universidad of universidades" [value]="universidad._id">{{ universidad.nombre }}</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" [disabled]="!estudianteForm.form.valid">Registrar Estudiante</button>
+      </div>
+    </form>
+  </div>
+  
