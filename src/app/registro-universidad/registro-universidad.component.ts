@@ -41,7 +41,7 @@ export class RegistroUniversidadComponent {
 
   // Método que se llama al enviar el formulario
   onSubmit() {
-    console.log('Formulario enviado');  // Verifica que se está llamando a onSubmit
+    console.log('Formulario enviado');  // Verifica que se está llamando a onSubmitsss
     this.registrarUniversidad(); // Llamamos a registrar la universidad
   }
 }
